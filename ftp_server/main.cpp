@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
  * @brief ftp main
- * @author shixinzhang@scutech.com
+ * @author zsh.right@gmail.com
  * @version 1.0
  * @date 2023-01-07
  */
