@@ -1,14 +1,18 @@
 #ifndef __FTP_MSG_H__
 #define __FTP_MSG_H__
 
-#define ESTABLISH   "220 connection  established.\n"
-#define LOGIN_SUCCESS "230 Login successful.\n" //Remote system type is UNIX.\r\nUsing binary mode to transfer files.\r\n"
+#define ESTABLISH "220 connection  established.\n"
+#define LOGIN_SUCCESS \
+  "230 Login successful.\n"  // Remote system type is UNIX.\r\nUsing binary mode
+                             // to transfer files.\r\n"
 
 #define USR_LOGI_FAILED "530 Login incorrect.\n"
 #define PWD_REQUIRE "331 Please specify the password.\n"
-#define OPEN_ASCII_MODE "150 Opening ASCII mode data connection for current directory.\n"
+#define OPEN_ASCII_MODE \
+  "150 Opening ASCII mode data connection for current directory.\n"
 #define TRANS_COMPELETE "226 Transfer complete.\n"
-#define SYST_CMD "Remote system type is UNIX.\n"//Using binary mode to transfer files.\r\n"
+#define SYST_CMD \
+  "Remote system type is UNIX.\n"  // Using binary mode to transfer files.\r\n"
 #define USR_UNLOGIN "530 Please login with USER and PASS.\n"
 #define CWD_SUCCESS "250 Directory successfully changed.\n"
 #define DELETE_SUCCESS "250 Delete operation successful.\n"
@@ -42,4 +46,4 @@
 #define DEFAULT_IP "127,0,0,1"
 #define DEFAULT_PORT 5051
 
-#endif // __FTP_MSG_H__
+#endif  // __FTP_MSG_H__

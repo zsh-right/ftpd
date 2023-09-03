@@ -4,10 +4,9 @@
 #include "container/Command.h"
 #include "container/Register_Action.h"
 
-class Dele_Command: public Command
-{
-public:
-    virtual void exec(const ACE_SOCK_Stream &stream, const string &cmd) override;
+class Dele_Command : public Command {
+ public:
+  virtual void exec(const ACE_SOCK_Stream &stream, const string &cmd) override;
 };
 
-#endif // __DELE_COMMAND_H__
+#endif  // __DELE_COMMAND_H__
