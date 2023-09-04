@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -pthread -g -rdynamic CMakeFiles/server.dir/main.cpp.o -o ../bin/server  -Wl,-rpath,/home/right/git-right/network:/home/right/git-right/ftp_command:/home/right/git-right/container:/home/right/git-right/common ../network/libnetwork.so ../ftp_command/libftp_command.so -lACE ../container/libcontainer.so ../common/libcommon.so 

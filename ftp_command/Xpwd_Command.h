@@ -6,10 +6,9 @@
 
 #define COMMAND_SIZE 80
 
-class Xpwd_Command: public Command
-{
-public:
-    virtual void exec(const ACE_SOCK_Stream &stream, const string &cmd)override;
+class Xpwd_Command : public Command {
+ public:
+  virtual void exec(const ACE_SOCK_Stream &stream, const string &cmd) override;
 };
 
-#endif // __XPWD_COMMAND_H__
+#endif  // __XPWD_COMMAND_H__
