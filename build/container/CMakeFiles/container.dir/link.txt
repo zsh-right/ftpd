@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libcontainer.so -o libcontainer.so CMakeFiles/container.dir/Command.cpp.o CMakeFiles/container.dir/Command_Factory.cpp.o CMakeFiles/container.dir/Register_Action.cpp.o  -Wl,-rpath,/home/right/git-right/build/common ../common/libcommon.so 

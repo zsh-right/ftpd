@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libnetwork.so -o libnetwork.so CMakeFiles/network.dir/Invoker.cpp.o CMakeFiles/network.dir/Server.cpp.o CMakeFiles/network.dir/Server_Stream.cpp.o CMakeFiles/network.dir/Task_Thread.cpp.o 

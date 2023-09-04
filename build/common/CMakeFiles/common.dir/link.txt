@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libcommon.so -o libcommon.so CMakeFiles/common.dir/Msg_Data.cpp.o CMakeFiles/common.dir/User.cpp.o CMakeFiles/common.dir/Util.cpp.o 

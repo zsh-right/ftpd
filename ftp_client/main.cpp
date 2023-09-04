@@ -17,10 +17,10 @@ int ACE_TMAIN(int argc, ACE_TCHAR *argv[])
   std::string ftp_host;
   int ftp_port;
 
-  std::cout << "请输入服务器的IP地址:";
+  std::cout << "ftp>input your host:";
   std::cin >> ftp_host;
 
-  std::cout << "请输入服务器的端口号:";
+  std::cout << "ftp>input your port:";
   std::cin >> ftp_port;
 
   std::string ftp_local_dir = "/home/scutech/ftp_server/";
@@ -55,7 +55,7 @@ int ACE_TMAIN(int argc, ACE_TCHAR *argv[])
   do
   {
     cout << "ftp>";
-    string parameter;
+    std::string parameter;
     getline(cin, parameter);
     vector<string> cmd;
     Stringsplit(parameter, " ", cmd);
@@ -89,8 +89,8 @@ int ACE_TMAIN(int argc, ACE_TCHAR *argv[])
     }
     else if (cmd[0] == "ls")
     {
-      string path = cmd.size() > 1 ? cmd[1] : "";
-      string pathlist;
+      std::string path = cmd.size() > 1 ? cmd[1] : "";
+      std::string pathlist;
       ftp_client.List(pathlist, path);
     }
     else if (cmd[0] == "user" && cmd.size() > 1)

@@ -25,17 +25,17 @@
 class FTPClient {
  public:
   FTPClient();
-  FTPClient(const string &remote_ip, const u_short remote_port,
+  FTPClient(const std::string &remote_ip, const u_short remote_port,
             int os_type = OS_DEFAULT);
   virtual ~FTPClient();
   bool connect();
   bool LogoIn();
   bool LogoOut();
-  void setUserInfo(string user_name, string password);
+  void setUserInfo(std::string user_name, std::string password);
   bool GetSysInfo();
   bool Noop();
 
-  void setAddr(string ip, int port);
+  void setAddr(std::string ip, int port);
   bool ChangeLocalDir(const std::string &dirname);
   bool ChangeRemoteDir(const std::string dirname);
 
