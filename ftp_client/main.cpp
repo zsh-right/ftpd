@@ -14,14 +14,8 @@ string password;
 int ACE_TMAIN(int argc, ACE_TCHAR* argv[])
 {
 	std::string ftp_host = "127.0.0.1";
-			int ftp_port = 5010;
+	int ftp_port = 5010;
 
-
-	std::string ftp_local_dir = "/home/scutech/ftp_server/";
-	std::string ftp_remote_dir = "/home/scutech/client/";
-
-	std::string ftp_local_file_tmp = "TaskThread.cpp";
-	std::string ftp_local_file = "TaskThread.cpp";
 	FTPClient ftp_client;
 	do{
 		// cout<<"ftp>input ip:"<<endl;
@@ -34,7 +28,7 @@ int ACE_TMAIN(int argc, ACE_TCHAR* argv[])
 		ftp_client.setAddr(ftp_host, ftp_port);
 		if(!ftp_client.connect()){
 			return 0;
-		}	
+		}
 		std::string ftp_user;
 		std::string ftp_pwd;
 		cout<<"ftp>input your user name:"<<endl;
@@ -66,7 +60,7 @@ int ACE_TMAIN(int argc, ACE_TCHAR* argv[])
 			ftp_client.GetSysInfo();
 		}else if(cmd[0] == "ls") {
 			string path = cmd.size()>1?cmd[1]:"";
-			string pathlist;	
+			string pathlist;
 			ftp_client.List(pathlist, path);
 		} else if (cmd[0] == "user" && cmd.size() > 1) {
 			name.clear();
@@ -95,7 +89,7 @@ int ACE_TMAIN(int argc, ACE_TCHAR* argv[])
 		} else if(cmd[0] == "size" && cmd.size() > 1){
 			ftp_client.size_cmd(cmd[1]);
 		} else if(cmd[0] == "xpwd") {
-			ftp_client.xpwd_cmd();			
+			ftp_client.xpwd_cmd();
 		}
 
 
